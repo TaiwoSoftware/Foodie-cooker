@@ -1,13 +1,13 @@
-import { useState } from 'react'
+import React from 'react';
+import Header from './components/Header';
 import './App.css'
-
-function App() {
-
+const App = () => {
   return (
-    <>
-      
-    </>
-  )
+    <div>
+      <Header />
+    </div>
+  );
 }
 
-export default App
+export default App;
+

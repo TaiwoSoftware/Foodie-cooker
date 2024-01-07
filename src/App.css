@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 10%;
+}
+
+.mainLogo {
+  display: flex;
+}
