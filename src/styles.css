@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'avenir';
+    src: url('./components//avenir/AvenirNextLTPro-Regular.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'avenir', sans-serif;
+}
+
+.allLogo {
+    display: flex;
+    align-items: center;
+}
+.allLogo img {
+    width: 10%;
+    
+}
+.links{
+    margin-right: 25rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+}
+
+li:hover {
+   text-decoration: underline;
+   text-decoration-color: #c6902c;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ .buttons {
+    display: flex;
+ }
+  
+ .buttons input {
+    border-radius: .2rem;
+    width: 100%;
+    border: 1px solid black;
+    padding: .2rem;
+    outline: none;
+ }
+
+ .buttons input::-webkit-search-cancel-button {
+    appearance: none;
+ }
+
+ .buttons img {
+    transform: translateX(-1.5rem);
+    width: 10%;
+ }
+
+ .home {
+    padding:1rem 0;
+    margin-top: 3rem;
+ }
+
+ .home h1 {
+    text-transform: uppercase;
+    margin-top: 10rem;
+    font-size: 3rem;
+    margin-left: 2rem;
+    text-align: center;
+ }
+
+ .homeer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ .image img {
+    width: 100%;
+ }
+
+ .texter {
+    margin-top: 4rem;
+ }
+
+ .texter p{
+    margin-top: 1rem;
+    margin-left: 9rem;
+ }
+
+ .texter span {
+    display: block;
+    text-align: left;
+ }
+
+ .get{
+    border: none;
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    background: #6a1b1b;
+    border-radius: 5px ;
+    color: #fff;
+    box-shadow: inset -3px -3px 3px black, 3px 3px 3px gray;
+    cursor: pointer;
+    margin-left: 9rem;
+ }
+
+ .food h1{
+   text-transform: uppercase;
+   text-align: center;
+   margin-top: 6rem;
+ }
