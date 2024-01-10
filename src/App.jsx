@@ -35,8 +35,9 @@ const App = () => {
               </Link>
             </div>
             <div className="buttons">
-              <input type="search" placeholder="search food..." />
-              <img src={searchIcon} alt="search" />
+              <button>Get started</button>
+              {/* <input type="search" placeholder="search food..." />
+              <img src={searchIcon} alt="search" /> */}
             </div>
           </nav>
         </header>
