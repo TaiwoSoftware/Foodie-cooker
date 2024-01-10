@@ -16,7 +16,7 @@ const Profile = () => {
           <br />
           <p>
             The project was worked on to make our chefs, our food makers whether
-            at home or restaurant to cook all things if you feel it is not reliable do a test on it try it at home on your own and try it{" "}
+            at home or restaurant to cook all things and make life easier for them without them thinking of what to add to the food to make it look like what it is meant to be.{" "}
           </p>
           <br />
           <p>Are you still looking at this page common give it a test and stop looking at my words and try it 😏😏😏😏😏</p>
