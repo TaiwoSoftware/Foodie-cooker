@@ -25,6 +25,7 @@ body {
   width: 10%;
 }
 .links {
+   
   margin-right: 23rem;
 }
 
@@ -133,4 +134,29 @@ a {
   text-transform: uppercase;
   text-align: center;
   margin-top: 6rem;
+}
+
+.about {
+   padding: 2rem;
+}
+
+.about h1, .contact h1 {
+   text-align: center;
+   margin-top: 3rem;
+}
+
+.about img {
+   width: 100%;
+   border-radius: 3rem;
+}
+
+.aboutP{
+   margin-top: 5rem;
+}
+
+.aboutGrid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2rem;
+   margin-top: 3rem;
 }
