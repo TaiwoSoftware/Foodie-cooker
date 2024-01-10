@@ -190,7 +190,45 @@ a {
   appearance: none;
 }
 
-.food img {
+.fooder img {
    width: 2.5rem;
-   transform: translateX(62rem) translateY(.5rem);
+   transform: translateX(59rem) translateY(5.5rem);
+}
+
+.recipes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  cursor: pointer; /* Change cursor on hover */
+  overflow: hidden; /* Hide overflow to create a clipping effect */
+}
+
+.recipes-grid:hover {
+  height: auto; /* Expand the container on hover */
+}
+
+.recipe-container {
+  /* Styles for each recipe container */
+  width: 30%; /* Adjust as needed */
+  margin-bottom: 20px;
+  text-align: center; /* Center the content */
+  transition: transform 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.recipes-grid:hover .recipe-container {
+  transform: translateY(20px); /* Move the container down on hover */
+}
+
+.recipe-image {
+  /* Styles for the recipe image */
+  width: 100%;
+  border-radius: 8px; /* Example border radius */
+  /* Add more image styles as needed */
+}
+
+h2 {
+  /* Styles for the recipe name */
+  margin-top: 10px;
+  font-size: 16px;
+  /* Add more heading styles as needed */
 }

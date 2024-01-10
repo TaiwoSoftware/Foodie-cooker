@@ -5,35 +5,33 @@ const Food = () => {
   const api_key = "e1b6f5720747d4ef6c891759a5f5d0fa";
   const api_id = "5c336466";
   const [value, setValue] = useState("");
+  const [recipes, setRecipes] = useState([]);
+
   const fetchData = async () => {
     try {
       const response = await fetch(
         `https://api.edamam.com/search?q=${value}&app_id=${api_id}&app_key=${api_key}`
       );
-  
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-  
       const result = await response.json();
       console.log(result);
+      setRecipes(result.hits); // Assuming 'hits' is an array of recipes in the API response
     } catch (error) {
-      console.error('Error fetching data:', error.message);
+      console.error("Error fetching data:", error.message);
     }
   };
-  
 
   useEffect(() => {
-    if(value) {
-        fetchData()
+    if (value) {
+      fetchData();
     }
-  },[value]);
-
+  }, [value]);
 
   return (
     <div className="food">
-      <h1>Search The recipe of your food</h1>
-      <img src={searchIcon} onClick={fetchData} alt="searcher" />
+      <div className="fooder">
+        <h1>Search The recipe of your food</h1>
+        <img src={searchIcon} onClick={fetchData} alt="searcher" />
+      </div>
 
       <input
         type="search"
@@ -41,8 +39,22 @@ const Food = () => {
         placeholder="search recipe..."
         value={value}
         onChange={(e) => setValue(e.target.value)}
-
       />
+
+      <div className="recipes-grid">
+        {/* Map through the recipes and render each one */}
+        {recipes.map((recipe) => (
+          <div key={recipe.recipe.uri} className="recipe-container">
+            <img
+              src={recipe.recipe.image}
+              alt={recipe.recipe.label}
+              className="recipe-image"
+            />
+            <h2>{recipe.recipe.label}</h2>
+            {/* <p>{recipe.recipe.ingredientLines}</p> */}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
