@@ -45,12 +45,17 @@ const Food = () => {
         {/* Map through the recipes and render each one */}
         {recipes.map((recipe) => (
           <div key={recipe.recipe.uri} className="recipe-container">
+            <h2>{recipe.recipe.label}</h2>
             <img
               src={recipe.recipe.image}
               alt={recipe.recipe.label}
               className="recipe-image"
             />
-            <h2>{recipe.recipe.label}</h2>
+            {/* <p>{recipe.recipe.ingredientLines}</p> */}
+            <div className="ingredients">
+              <div className="ingredients-descriptions">
+              </div>
+            </div>
             {/* <p>{recipe.recipe.ingredientLines}</p> */}
           </div>
         ))}

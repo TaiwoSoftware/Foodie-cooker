@@ -16,7 +16,7 @@ const App = () => {
           <nav>
             <div className="allLogo">
               <img src={logo} alt="main logo" />
-              <Link to='/'>
+              <Link to="/">
                 <h2>Recipe</h2>
               </Link>
             </div>
@@ -27,17 +27,19 @@ const App = () => {
               <Link to="/food">
                 <li>Recipe</li>
               </Link>
-              <Link to="/about">
-                <li>About</li>
-              </Link>
-              <Link to="/contact">
-                <li>Contact</li>
-              </Link>
+              <span className="innerLinks">
+                <Link to="/about">
+                  <li>About</li>
+                </Link>
+                <Link to="/contact">
+                  <li>Contact</li>
+                </Link>
+              </span>
             </div>
             <div className="buttons">
-              <button>Get started</button>
-              {/* <input type="search" placeholder="search food..." />
-              <img src={searchIcon} alt="search" /> */}
+              <Link to="/food">
+                <button> Get started</button>
+              </Link>
             </div>
           </nav>
         </header>
