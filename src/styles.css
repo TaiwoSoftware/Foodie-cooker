@@ -232,6 +232,19 @@ h2 {
   /* Add more heading styles as needed */
 }
 
+.contact img{
+  border-radius: 50%;
+}
+
+.all {
+  margin-left: 35rem;
+  margin-top: 2rem;
+}
+.contact p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
 /* .ingredients{
   position: relative;
   margin-bottom:40px ;
@@ -378,14 +391,7 @@ h2 {
     margin-top: 0;
     margin-bottom: 2rem;
     text-align: center;
-
   }
-
-  .get {
-    margin: 0;
-    
-  }
-
   .texter span {
     margin: 0;
     text-align: center;

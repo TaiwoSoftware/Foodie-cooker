@@ -14,7 +14,7 @@ const Food = () => {
       );
       const result = await response.json();
       console.log(result);
-      setRecipes(result.hits); // Assuming 'hits' is an array of recipes in the API response
+      setRecipes(result.hits); // 
     } catch (error) {
       console.error("Error fetching data:", error.message);
     }
